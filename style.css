@@ -129,6 +129,7 @@
 .header{
     padding: 2rem 0;
     background-color: var(--clr-semilight);
+
     }
     .header_wrapper{
       display: flex;
@@ -184,6 +185,7 @@
       margin-top: 26rem;
       gap: 2rem;
       right: -100%;
+
     }
     .header_nav.open{
       right: 0;
@@ -214,6 +216,7 @@
     background-color: var(--clr-secondary);
     padding: 3rem 0;
     text-align: center;
+   
   }
   .top span{
     font-size: 1.7rem;
@@ -393,41 +396,40 @@
 
 /* CALL TO ACTION */
 .cta{
-    padding: 3rem 0;
-    background-color: var(--clr-primary);
-    color: var(--clr-semilight);
-  }
-  .cta__wrapper{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .cta h2{
-  font-size: 2.5rem;
-  font-weight: 700;
-  }
-  .cta p{
-    margin-bottom: 1rem;
-  }
-  /* FOOTER */
-  .footer{
-    background-color: var(--clr-dark);
-    color: var(--clr-semilight);
-    padding: 2rem 0;
-  }
-  .footer__wrapper{
-    display: flex;
-    justify-content: space-between;
-  }
-  .footer ul{
-    display: flex;
-    gap: 1rem;
-  }
-  .footer ul li a{
-    color: var(--clr-semilight);
-  }
-
+  padding: 3rem 0;
+  background-color: var(--clr-primary);
+  color: var(--clr-semilight);
+}
+.cta__wrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.cta h2{
+font-size: 2.5rem;
+font-weight: 700;
+}
+.cta p{
+  margin-bottom: 1rem;
+}
+/* FOOTER */
+.footer{
+  background-color: var(--clr-dark);
+  color: var(--clr-semilight);
+  padding: 2rem 0;
+}
+.footer__wrapper{
+  display: flex;
+  justify-content: space-between;
+}
+.footer ul{
+  display: flex;
+  gap: 1rem;
+}
+.footer ul li a{
+  color: var(--clr-semilight);
+}
 
 /* FOOTER MOBILE */
 @media screen and (max-width:520px){
@@ -758,41 +760,292 @@ margin-left: -25rem;
 
 }
 
+/* ABOUT SECTION MOBILE */
+@media screen and (max-width:520px) {
+  .aboutBanner {
+    display: flex;
+  }
+  .package__right  h1::before{
+   display: flex;
+  }
+}
+/* CATALOG SECTION MOBILE */
+@media screen and (max-width: 520px){
+  .package__right  h1::after{
+   display: flex;
+  }
+  .package__wrapper{
+    grid-template-columns: 1fr;
+  }
+} 
+
+
+/* * LATEST STYLE MOBILE */ 
+@media screen and (max-width: 520px) {
+  .latestBanner__wrapper{
+    grid-template-columns:1fr
+  }
+  .latestBanner h1::after{
+    display: none;
+  }
+  }
 
 
 
 
+/* Updates */
 
-    /* REPEATABLE  */
-      .btn{
-        background-color: transparent;
-        border: transparent;
-        border-radius: 10rem;
-        padding: 1rem 2rem;
-        color: transparent;
-        box-shadow: rgba(255, 255, 255, 0.24) 0px 3px 8px;
-        font-weight: 700;
-      }
-      .btn.bg--semi-light{
-        background-color: var(--clr-semilight);
-        color: var(--clr-dark);
-      }
-      .btn.bg--semi-light:hover{
-        background-color: var(--clr-dark);
-        color: var(--clr-semilight);
-      }
+.updates{
+  padding: 3rem 0;
+}
+.updates__wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.updates__content{
+  padding: 40px 0;
+  max-width: 500px;
+  width: 100%;
+}
+.updates__content h1{
+  text-align: center;
+  font-size: 70px;
+  font-weight: 1000;
+  color: var(--clr-primary);
+  margin-bottom: 20px;
   
-      .btn--nobg{
-        color: var(--clr-dark);
-      }
-      .btn--nobg:hover{
-        color: var(--clr-primary);
-      }
+}
+
+
+
+
+/* building */
+
+.building{
+  padding: 3rem 0;
+}
+
+.building h2{
+  margin-bottom: 20px;
+  text-align: left;
+  color: var(--clr-secondary);
+font-size: 3rem;
+font-weight: 1000;
+}
+
+.building__wrapper{
+  display: grid;
+  grid-template-columns: 2.5fr 1fr;
+  grid-gap: 20px;
+}
+.building__card{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 50px;
+}
+.building__card .card{
+  padding: 3rem;
+  background: var(--clr-semilight);
+}
+
+.building__card .card h4{
+text-align: left;
+margin-bottom: 30px;
+font-size: 25px;
+color: var(--clr-dark);
+font-weight: 1000;
+}
+.building__card .card i{
+display: flex;
+font-size: 4rem;
+justify-content: flex-end;
+
+}
+.building__bar ul{
+  list-style: none;
+}
+
+.building__bar ul li{
+margin-bottom: 20px;
+display: flex;
+justify-content: space-between;
+font-weight: 900;
+}
+
+
+/* recent project */
+.recent{
+  padding: 3rem 0;
+}
+.recent h2{
+
+  text-align: center;
+  color: var(--clr-primary);
+  font-size: 3rem;
+  font-weight: 1000;
+}
+.recent__wrapper{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+}
+
+.recent__wrapper ul{
+  list-style: none;
+  display: flex;
+justify-content: space-between;
+  font-weight: 900;
+}
+.recent__wrapper li{
+display: flex;
+}
+.recent__card i{
+ font-size: 2rem;
+justify-content: left;
+}
+
+.recent__wrapper img{
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+/* contact */
+.contact{
+  padding: 3rem 0;
+  background-color: var(--clr-semilight);
+  
+}
+.contact__wrapper{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 30px;
+
+}
+.contact__left h1{
+  font-size: 5rem;
+  margin-bottom: 3%;
+  color: var(--clr-primary);
+  font-weight: 900;
+}
+  .contact__left p{
+    margin-bottom: 10%;
+    margin-top: 0;
+}
+.contact__left input,
+.contact__left textarea{
+  border: none;
+  background-color: var(--clr-semilight);
+  width: 100%;
+  border-bottom: 1px solid var(--clr-dark);
+  padding: 5px 16px;
+}
+.contact__left button{
+  width: 100%;
+  padding: 10px 16px;
+  background: var(--clr-dark);
+  color: var(--clr-light);
+  margin-top: 10px;
+  border: none;
+  border-radius: 20px;
+}
+.contact__right{
+  background: var(--clr-dark);
+  color: var(--clr-light);
+  padding: 50px;
+  width: 60%;
+  height: 70%;
+  margin-top: 15%;
+  margin-bottom: 1%;
+}
+
+.contact__right ul{
+list-style: none;
+color: var(--clr-secondary);
+}
+
+.contact__right ul li{
+margin-bottom: 20px;
+
+
+}
+
+.contact__right ul li i{
+font-size: 20px;
+display: flex;
+align-items: center;
+gap: 30px;
+
+
+}
+
+.contact__right h2{
+  font-size: 2rem;
+  margin-bottom: 5%;
+
+}
+
+
+
+     /* REPEATABLE  */
+     .btn{
+      background-color: transparent;
+      border: transparent;
+      border-radius: 10rem;
+      padding: 1rem 2rem;
+      color: transparent;
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      font-weight: 700;
+    }
+    .btn.bg--semi-light{
+      background-color: var(--clr-semilight);
+      color: var(--clr-dark);
+    }
+    .btn.bg--semi-light:hover{
+      background-color: var(--clr-dark);
+      color: var(--clr-semilight);
+    }
+
+    .btn--nobg{
+      color: var(--clr-dark);
+    }
+    .btn--nobg:hover{
+      color: var(--clr-primary);
+    }
 
 
 
 
 
+/* ABOUT SECTION MOBILE */
+@media screen and (max-width:520px) {
+  .aboutSection__left {
+    display: none;
+  }
+  .aboutSection  h2::before{
+    display: none;
+  }
+}
+/* CATALOG SECTION MOBILE */
+@media screen and (max-width: 520px){
+  .catalogSection h2::after{
+    display: none;
+  }
+  .catalogSection__wrapper{
+    grid-template-columns: 1fr;
+  }
+} 
+
+
+/* * LATEST STYLE MOBILE */ 
+@media screen and (max-width: 520px) {
+  .latestBanner__wrapper{
+    grid-template-columns:1fr
+  }
+  .latestBanner h1::after{
+    display: none;
+  }
+  }
 
 
 
